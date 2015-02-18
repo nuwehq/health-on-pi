@@ -14,17 +14,17 @@ end
 
 # Television screen
 get '/dashboard' do
-  'This is a dashboard'
+  erb :dashboard
 end
 
 ############# Session accesss ############### 
 # Sign up
 get '/sign_up' do
-  'This is the sign in page'
+  erb :sign_up
 end
 # Login
-get '/log_in' do
-  'This is a login page'
+get '/sign_in' do
+  erb :sign_in
 end
 # Logout
 get '/log_out' do
