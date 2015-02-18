@@ -2,25 +2,20 @@
 require 'sinatra'
 require 'erubis'
 
-
 ############# Config/Settings ############### 
-# Use escaped ERuby
-set :erb, :escape_html => true
-
+# Use ERuby
+set :erb, :escape_html => false
+set :public_folder, './public'
 
 # root
 get '/' do
-  'Hello Nuwe!'
+  erb :index
 end
 
 # Television screen
 get '/dashboard' do
   'This is a dashboard'
 end
-
-
-############# OAuth ############### 
-# Auth in using omniauth with Nuwe
 
 ############# Session accesss ############### 
 # Sign up
@@ -33,5 +28,8 @@ get '/log_in' do
 end
 # Logout
 get '/log_out' do
-  'This is a login page'
+	'OK'
 end
+
+############# OAuth ############### 
+# Auth in using omniauth with Nuwe
