@@ -4,8 +4,6 @@ A health dashboard image for the raspberry pi
 
 ## Running
 
-Write something about dev here.
-
 ### Ruby app
 
 Install the dependencies by using `cd` to navigate to the root of the project and running `bundle`.
