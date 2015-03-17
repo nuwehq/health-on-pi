@@ -7,26 +7,6 @@ require 'erubis'
 set :erb, :escape_html => false
 set :public_folder, './public'
 
-set :sessions => true
-
-register do
-	def auth (type)
-		condition do
-			redirect "/login" unless send("is_#{type}?")
-		end
-	end
-end
-
-helpers do
-	def is_user?
-  		@user != nil
-	end
-end
-
-before do
-	# @user = User.get(session[:user_id])
-end
-
 # root
 get '/' do
   erb :dashboard
