@@ -1,0 +1,177 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+@pink: #D60B52;
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #F6F6F6;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+	/*font-family: ;*/
+}
+
+h1 { font-size: 23px; margin: 10px; }
+
+
+nav {
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+}
+
+nav ul li a img {
+	max-width: 125px;
+	width: 100%;
+}
+
+.container {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.dashboard { margin-top: 30px; }
+
+.score_table {
+  max-width: 65%;
+}
+
+.score_chart {
+	text-align: center;
+
+	h2 {
+		font-size: 42px;
+		color: @pink;
+	}
+
+	.company_score {
+		position: relative;
+		height: 100px;
+  		display: inline-block;
+  		width: 100px;
+		.score {
+			position: absolute;
+			top: -25px; left: 0; right: 0;
+			text-align: center;
+			font-size: 45px;
+		}
+		img {
+			display: inline;
+			margin-top: 2em;
+		}
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, tr {
+	width: 100%;
+}
+
+th {
+	text-align: left;
+	color: #D60B52;
+	font-size: 32px;
+  	padding: 20px 0;
+}
+
+tr {
+	font-size: 22px;
+}
+
+td {
+	padding: 20px;
+}
+
+th.score {
+	text-align: center;
+}
+
+th img {
+	margin: 0 10px;
+	max-width: 35px;
+}
+
+tr:nth-child(even) {
+	background-color: #EEEEEE;
+}
+
+.score {}
+
+.score.nuscore { color: #45A9F1; }
+.score.biometrics { color: #CB48F3; }
+.score.activity { color: #FD8324; }
+.score.nutrition { color: #179C77; }
+
+.half {
+	max-width: 50%;
+	width: 100%;
+}
+
+.left { float: left; }
+.right { float: right; }
+.clfx { clear: both; }
+.center { text-align: center; }
+
+/* Forms */
+
+label { display: block; }
+
+input {
+	padding: 10px;
+	display: inline-block;
+	max-width: 400px;
+	width: 100%;
+	margin: 15px 0;
+	background-color: rgba( 255, 255, 255, 0.6);
+	border: 2px solid #ddd;
+	transition: border-color .2s ease-out;
+}
+
+input:focus {
+	outline: none;
+	border-color: rgba(214, 11, 82, 0.8);
+	transition: border-color .3s ease-out;
+}
+
+input[type="submit"]{
+	background-color: #F6F6F6;
+	border: 2px solid #D60B52;
+	font-weight: 900;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #D60B52;
+	padding: 5px;
+	transition: all .2s ease-out;
+}
+
+input[type="submit"]:focus,input[type="submit"]:active {
+	background-color: #D60B52;
+	color: #F6F6F6;
+	border-color: #F6F6F6;
+	transition: all .2s ease-out;
+}
+
+/* Media's */
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.container {
+		// max-width: 800px;
+	}
+}
