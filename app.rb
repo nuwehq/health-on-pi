@@ -31,10 +31,6 @@ get '/sign_in' do
 	erb :sign_in
 end
 
-post '/sign_in' do
-	puts 
-end
-
 # Logout
 get '/log_out' do
 	'OK'
