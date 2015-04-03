@@ -1,12 +1,35 @@
-
-
-// window.onload = function() {
-// 	var a = new Circle( 100, 100 );
-//     var c = new Circle( 300, 300 );
-// }
-
-// function Circle( height, width ){
-// 	var paper = new Raphael( 40, 40, width, height );
-// 	var circle = paper.circle(width, height, width*height/2);
-// 	return circle;
-// }
+document.addEventListener("DOMContentLoaded", function(event) { 
+   nuwe_charts('demo1', 
+    {
+        'data': [
+            {
+                "color": "#00b7ff",
+                "amount": 721,
+                "maxValue": 1000,
+                "textLabel": "Overall",
+                "textLabelColor": "#ffffff"
+            },
+            {
+                "color": "#009D76",
+                "amount": 930,
+                "maxValue": 1000,
+                "textLabel": "Food",
+                "textLabelColor": "#ffffff"
+            },
+            {
+                "color": "#ff8300",
+                "amount": 453,
+                "maxValue": 1000,
+                "textLabel": "Nutrition",
+                "textLabelColor": "#ffffff"
+            },
+            {
+                "color": "#cd3df6",
+                "amount": 780,
+                "maxValue": 1000,
+                "textLabel": "Exercise",
+                "textLabelColor": "#ffffff"
+            }
+        ]
+    });	
+})

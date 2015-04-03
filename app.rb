@@ -1,11 +1,16 @@
 
 require 'sinatra'
 require 'erubis'
+require 'nuwe'
 
 ############# Config/Settings ############### 
 # Use ERuby
 set :erb, :escape_html => false
 set :public_folder, './public'
+
+#Nuwe.configure do |c|
+ # c.token = "8723ee8e-848c-481b-8c6b-e43e0f325283"
+#end
 
 # root
 get '/' do
@@ -34,6 +39,11 @@ end
 # Logout
 get '/log_out' do
 	'OK'
+end
+
+
+get '/test' do 
+	#Nuwe::Auth.create "me@example.com", "supersecret"
 end
 
 ############# OAuth ############### 
