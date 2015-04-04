@@ -1,4 +1,13 @@
-document.addEventListener("DOMContentLoaded", function(event) { 
+// To call javascript after it's fully loaded
+var readyStateCheckInterval = setInterval(function() {
+    if (document.readyState === "complete") {
+        clearInterval(readyStateCheckInterval);
+        init();
+    }
+}, 10);
+
+function init() {
+    
    nuwe_charts('demo1', 
     {
         'data': [
@@ -32,4 +41,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
         ]
     });	
-})
+}
