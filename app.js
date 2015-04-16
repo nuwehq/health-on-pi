@@ -10,7 +10,12 @@ var cookieSession = require('cookie-session');
 var session = require('express-session');
 var mustacheExpress = require('mustache-express');
 var app = express();
-var server = require( 'http' ).createServer( app ) 
+var server = require( 'http' ).createServer( app );
+
+// config files
+var db = require('./config/db');
+var User = require('./models/user');
+
 
 var NUWE_CLIENT_ID = "a17594f29a795a031dd4905f03e0f929b1504e34d79d8e0263938d63d359a932";
 var NUWE_CLIENT_SECRET = "d8222c1b1d0a0daf86614d9c2c381465891fb147645a155251cec6c52fa0ffd3";

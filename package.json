@@ -23,6 +23,8 @@
     "cookie-session": "^1.1.0",
     "express": "^4.12.3",
     "express-session": "^1.11.1",
+    "mongoose": "^3.8.19",
+    "mongoose-findorcreate": "^0.1.2",
     "mustache-express": "^1.2.1",
     "passport": "^0.2.1",
     "passport-nuwe": "^2.0.0",
